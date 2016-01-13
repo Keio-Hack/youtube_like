@@ -1,0 +1,20 @@
+main {
+  margin: 100px 0;
+  height: auto;
+  width: 100%; }
+
+.main_content {
+  width: calc(100% - 620px);
+  height: auto;
+  margin: 0 auto;
+  background-color: #ddd;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 100, 0.7) 0 0 6px 1px; }
+  .main_content .contents {
+    width: 90%;
+    height: 300px;
+    margin: 25px 5%;
+    background-color: #fff;
+    float: left; }
+
+/*# sourceMappingURL=home.css.map */

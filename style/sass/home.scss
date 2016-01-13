@@ -1,0 +1,32 @@
+@mixin material_shadow($deep){
+    box-shadow: rgba(100,100,100,.7) 0 0 $deep * 6 $deep
+}
+
+
+main{
+    margin: 100px  0 ;
+    height: auto;
+    width: 100%;
+}
+
+.main_content{
+    width: calc(100% - 620px);
+    height: auto;
+    // height: auto;
+    margin: 0 auto;
+    background-color: #ddd;
+    border-radius: 3px;
+
+    @include material_shadow(1px);
+
+    .contents{
+        width: 90%;
+        height: 300px;
+        margin: 25px 5% ;
+        background-color: #fff;
+        float: left;
+
+    }
+
+
+}
