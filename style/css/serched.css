@@ -8,20 +8,42 @@ main {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 3px;
-    box-shadow: rgba(125, 125, 125, 0.8) 0 0 4px 1px; }
+    box-shadow: rgba(75, 75, 75, 0.7) 0 0 4px 1px; }
     main .main_content .results {
-      width: 850px;
+      width: 800px;
       height: 180px;
-      margin: 10px 25px;
+      margin: 20px 50px;
       background-color: #efefef;
       float: left;
       border-radius: 3px;
-      box-shadow: rgba(125, 125, 125, 0.8) 0 0 4px 1px; }
+      position: relative;
+      transition: all .2s;
+      box-shadow: rgba(75, 75, 75, 0.7) 0 0 4px 1px; }
+      main .main_content .results:hover {
+        box-shadow: rgba(75, 75, 75, 0.7) 0 0 8px 1px; }
+        main .main_content .results:hover > .share {
+          height: 50px;
+          width: 50px;
+          bottom: 20px;
+          left: 295px; }
       main .main_content .results .mov {
         height: 180px;
         width: 320px;
         background-color: #000;
         float: left;
         border-radius: 3px 0 0 3px; }
+      main .main_content .results .share {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        bottom: 45px;
+        left: 320px;
+        background-color: #EF5350;
+        border-radius: 50%;
+        box-shadow: rgba(75, 75, 75, 0.7) 0 0 4px 1px;
+        transition: all .2s;
+        transition-delay: height .2s; }
+        main .main_content .results .share:hover {
+          box-shadow: rgba(75, 75, 75, 0.7) 0 0 12px 3px; }
 
 /*# sourceMappingURL=serched.css.map */

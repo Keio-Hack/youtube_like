@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   box-shadow: rgba(125, 125, 125, 0.8) 0 0 12px 4px; }
   header .logo {
     position: fixed;

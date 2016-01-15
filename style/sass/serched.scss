@@ -1,6 +1,8 @@
 @mixin material_shadow($deep,$kosa){
-    box-shadow: rgba(125,125,125,.8) 0 0 $deep  $kosa;
+    box-shadow: rgba(75,75,75,.7) 0 0 $deep  $kosa;
 }
+
+$share_size:50px;
 
 main{
     width: 100%;
@@ -17,14 +19,27 @@ main{
         @include material_shadow(4px,1px);
 
         .results{
-            width: 850px;
+            width: 800px;
             height: 180px;
-            margin: 10px 25px;
+            margin: 20px 50px;
             background-color: #efefef;
             float: left;
             border-radius: 3px;
+            position: relative;
+            transition: all .2s;
 
             @include material_shadow(4px ,1px);
+
+            &:hover{
+
+                @include material_shadow(8px,1px);
+                > .share{
+                    height: $share_size;
+                    width: $share_size;
+                    bottom: 20px;
+                    left: 320px - $share_size / 2;
+                }
+            }
 
             .mov{
                 height: 180px;
@@ -32,6 +47,26 @@ main{
                 background-color: #000;
                 float: left;
                 border-radius: 3px 0 0 3px;
+            }
+
+            .share{
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                bottom: 20px + $share_size / 2;
+                left: 320px ;
+                background-color: #EF5350;
+                border-radius: 50%;
+
+                @include material_shadow(4px,1px);
+                // opacity: 0;
+
+                transition: all .2s;
+                transition-delay: height .2s;
+
+                &:hover{
+                    @include material_shadow(12px,3px);
+                }
             }
         }
     }
