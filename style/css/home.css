@@ -4,17 +4,47 @@ main {
   width: 100%; }
 
 .main_content {
-  width: calc(100% - 620px);
+  width: 900px;
   height: auto;
   margin: 0 auto;
-  background-color: #ddd;
+  background-color: #fff;
   border-radius: 3px;
-  box-shadow: rgba(100, 100, 100, 0.7) 0 0 6px 1px; }
+  box-shadow: rgba(125, 125, 125, 0.8) 0 0 6px 1px; }
   .main_content .contents {
     width: 90%;
-    height: 300px;
-    margin: 25px 5%;
-    background-color: #fff;
-    float: left; }
+    height: 260px;
+    margin: 15px 5%;
+    border: solid 1px #eee;
+    float: left;
+    overflow-x: scroll; }
+    .main_content .contents .title {
+      height: 30px;
+      width: 100%;
+      margin: 5px 0; }
+      .main_content .contents .title h2 {
+        line-height: 30px;
+        font-size: 20px; }
+    .main_content .contents .movies {
+      width: 1500px;
+      height: 200px; }
+      .main_content .contents .movies .card {
+        float: left;
+        height: 210px;
+        width: 240px;
+        margin: 0 5px;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: rgba(125, 125, 125, 0.8) 0 0 4px 1px; }
+        .main_content .contents .movies .card .mov {
+          height: 135px;
+          width: 240px;
+          float: left;
+          background-color: #222;
+          border-radius: 3px 3px 0 0; }
+        .main_content .contents .movies .card .exp {
+          height: 75px;
+          width: 240px;
+          float: left;
+          background-color: #efefef; }
 
 /*# sourceMappingURL=home.css.map */

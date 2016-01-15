@@ -1,0 +1,27 @@
+main {
+  width: 100%;
+  height: auto;
+  margin: 100px 0; }
+  main .main_content {
+    height: auto;
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: rgba(125, 125, 125, 0.8) 0 0 4px 1px; }
+    main .main_content .results {
+      width: 850px;
+      height: 180px;
+      margin: 10px 25px;
+      background-color: #efefef;
+      float: left;
+      border-radius: 3px;
+      box-shadow: rgba(125, 125, 125, 0.8) 0 0 4px 1px; }
+      main .main_content .results .mov {
+        height: 180px;
+        width: 320px;
+        background-color: #000;
+        float: left;
+        border-radius: 3px 0 0 3px; }
+
+/*# sourceMappingURL=serched.css.map */
