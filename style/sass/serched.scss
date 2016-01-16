@@ -13,10 +13,10 @@ main{
         height: auto;
         width: 900px;
         margin: 0 auto;
-        background-color: #fff;
+        // background-color: #fff;
         border-radius: 3px;
 
-        @include material_shadow(4px,1px);
+        // @include material_shadow(4px,1px);
 
         .results{
             width: 800px;
@@ -38,13 +38,14 @@ main{
                     width: $share_size;
                     bottom: 20px;
                     left: 320px - $share_size / 2;
+                    @include material_shadow(8px,2px);
                 }
             }
 
             .mov{
                 height: 180px;
                 width: 320px;
-                background-color: #000;
+                background-color: #fff;
                 float: left;
                 border-radius: 3px 0 0 3px;
             }
@@ -57,15 +58,13 @@ main{
                 left: 320px ;
                 background-color: #EF5350;
                 border-radius: 50%;
-
-                @include material_shadow(4px,1px);
                 // opacity: 0;
 
                 transition: all .2s;
                 transition-delay: height .2s;
 
                 &:hover{
-                    @include material_shadow(12px,3px);
+                    @include material_shadow(16px,2px);
                 }
             }
         }

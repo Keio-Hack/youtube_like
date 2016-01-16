@@ -31,7 +31,44 @@ header{
         height: 50px;
         margin: 5px auto;
         width: 900px;
-        background-color: #718E9C;
+        // background-color: #718E9C;
+
+        .find_logo{
+            height: 40px;
+            width: 40px;
+            float: left;
+            margin: 5px;
+            // background-color: #fff;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        .find{
+            height: 40px;
+            width: 850px;
+            float: left;
+
+            input{
+                display: block;
+                height: 50px;
+                width: 850px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                background-color: rgba(200,200,200,.5);
+                transition: .2s;
+
+                font-size: 35px;
+                font-family: 'Roboto', sans-serif;
+
+                &:focus{
+                    background-color: #fff;
+                    outline: none;
+                }
+            }
+        }
     }
 
     .other{

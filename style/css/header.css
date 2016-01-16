@@ -20,8 +20,33 @@ header {
   header .find_window {
     height: 50px;
     margin: 5px auto;
-    width: 900px;
-    background-color: #718E9C; }
+    width: 900px; }
+    header .find_window .find_logo {
+      height: 40px;
+      width: 40px;
+      float: left;
+      margin: 5px; }
+      header .find_window .find_logo img {
+        height: 40px;
+        width: 40px; }
+    header .find_window .find {
+      height: 40px;
+      width: 850px;
+      float: left; }
+      header .find_window .find input {
+        display: block;
+        height: 50px;
+        width: 850px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: rgba(200, 200, 200, 0.5);
+        transition: .2s;
+        font-size: 35px;
+        font-family: 'Roboto', sans-serif; }
+        header .find_window .find input:focus {
+          background-color: #fff;
+          outline: none; }
   header .other {
     height: 50px;
     width: 200px;
