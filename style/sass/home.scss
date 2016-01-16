@@ -14,25 +14,27 @@ main{
     height: auto;
     // height: auto;
     margin: 0 auto;
-    background-color: #fff;
+    // background-color: #fff;
     border-radius: 3px;
 
-    @include material_shadow(6px,1px);
+    // @include material_shadow(6px,1px);
 
     .contents{
-        width: 90%;
-        height: 260px;
-        margin: 15px 5% ;
+        width: 900px;
+        height: 300px;
+        margin: 0 0 30px 0;
+        // background-color: #fff;
         // background-color: #efefef;
-        border:solid 1px #eee;
+        // border:solid 1px #eee;
         float: left;
         overflow-x: scroll;
-        // @include material_shadow(6px,1px);
+        border-radius: 3px;
+        @include material_shadow(6px,1px);
 
         .title{
             height: 30px;
             width: 100%;
-            margin: 5px 0;
+            margin: 10px 0;
             h2{
                 line-height: 30px;
                 font-size: 20px;
@@ -42,6 +44,7 @@ main{
         .movies{
             width: 1500px;
             height: 200px;
+            margin: 0 20px;
             .card{
                 float: left;
                 height: 210px;

@@ -7,26 +7,26 @@ main {
   width: 900px;
   height: auto;
   margin: 0 auto;
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: rgba(125, 125, 125, 0.8) 0 0 6px 1px; }
+  border-radius: 3px; }
   .main_content .contents {
-    width: 90%;
-    height: 260px;
-    margin: 15px 5%;
-    border: solid 1px #eee;
+    width: 900px;
+    height: 300px;
+    margin: 0 0 30px 0;
     float: left;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    border-radius: 3px;
+    box-shadow: rgba(125, 125, 125, 0.8) 0 0 6px 1px; }
     .main_content .contents .title {
       height: 30px;
       width: 100%;
-      margin: 5px 0; }
+      margin: 10px 0; }
       .main_content .contents .title h2 {
         line-height: 30px;
         font-size: 20px; }
     .main_content .contents .movies {
       width: 1500px;
-      height: 200px; }
+      height: 200px;
+      margin: 0 20px; }
       .main_content .contents .movies .card {
         float: left;
         height: 210px;

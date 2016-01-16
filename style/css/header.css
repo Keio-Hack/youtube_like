@@ -20,7 +20,10 @@ header {
   header .find_window {
     height: 50px;
     margin: 5px auto;
-    width: 900px; }
+    width: 900px;
+    transition: all .3s; }
+    header .find_window:hover {
+      box-shadow: rgba(50, 50, 50, 0.8) 0 0 5px 1px; }
     header .find_window .find_logo {
       height: 40px;
       width: 40px;
@@ -30,7 +33,7 @@ header {
         height: 40px;
         width: 40px; }
     header .find_window .find {
-      height: 40px;
+      height: 50px;
       width: 850px;
       float: left; }
       header .find_window .find input {
@@ -42,11 +45,12 @@ header {
         border: 0;
         background-color: rgba(200, 200, 200, 0.5);
         transition: .2s;
-        font-size: 35px;
+        font-size: 25px;
         font-family: 'Roboto', sans-serif; }
         header .find_window .find input:focus {
           background-color: #fff;
-          outline: none; }
+          outline: none;
+          box-shadow: rgba(50, 50, 50, 0.8) 0 0 5px 1px; }
   header .other {
     height: 50px;
     width: 200px;
