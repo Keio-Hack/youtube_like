@@ -21,42 +21,44 @@ main{
 
     .contents{
         width: 900px;
-        height: 300px;
-        margin: 0 0 30px 0;
+        height: auto;
+        margin: 0 0 80px 0;
         // background-color: #fff;
         // background-color: #efefef;
         // border:solid 1px #eee;
         float: left;
         overflow-x: scroll;
         border-radius: 3px;
-        @include material_shadow(6px,1px);
+        // @include material_shadow(6px,1px);
 
         .title{
             height: 30px;
             width: 100%;
             margin: 10px 0;
+
             h2{
                 line-height: 30px;
                 font-size: 20px;
+                text-indent: 1em;
             }
         }
 
         .movies{
-            width: 1500px;
-            height: 200px;
-            margin: 0 20px;
+            width: 900px;
+            height: auto;
+            // margin: 0 20px;
             .card{
                 float: left;
-                height: 210px;
-                width: 240px;
-                margin: 0 5px;
+                height: calc(200px / 16 * 9 + 75px);
+                width: 200px;
+                margin: 0 12.5px 15px 12.5px;
                 background-color: #fff;
                 border-radius: 3px;
 
-                @include material_shadow(4px,1px);
+                @include material_shadow(4px,2px);
                 .mov{
-                    height: 135px;
-                    width: 240px;
+                    height: calc(200px / 16 * 9);
+                    width: 200px;
                     float: left;
                     background-color: #222;
                     border-radius: 3px 3px 0 0;
@@ -64,7 +66,7 @@ main{
 
                 .exp{
                     height: 75px;
-                    width: 240px;
+                    width: 200px;
                     float: left;
                     background-color: #efefef;
                 }

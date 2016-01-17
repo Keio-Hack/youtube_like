@@ -8,9 +8,9 @@ main {
     margin: 0 auto;
     border-radius: 3px; }
     main .main_content .results {
-      width: 800px;
-      height: 180px;
-      margin: 20px 50px;
+      width: 900px;
+      height: 200px;
+      margin: 0px;
       background-color: #efefef;
       float: left;
       border-radius: 3px;
@@ -26,8 +26,8 @@ main {
           left: 295px;
           box-shadow: rgba(75, 75, 75, 0.7) 0 0 8px 2px; }
       main .main_content .results .mov {
-        height: 180px;
-        width: 320px;
+        height: 200px;
+        width: calc(200px / 9 * 16);
         background-color: #fff;
         float: left;
         border-radius: 3px 0 0 3px; }
